@@ -16,15 +16,16 @@ print(result)
 
 # exercise 2
 patient_name = input("Enter patient's name: ")
-body_temp = input("Enter body temp: ")
+body_temp = int(input("Enter body temp: "))
 
-def covid(patient_name,body_temp = 98):
-    print("patient's name: ",patient_name)
-    print("patient body temp ", body_temp, "degrees")
-    return()
+def covid(patient_name,body_temp):
+        if body_temp > 98:
+            print("patient body temp ", body_temp, "degrees. Covid patient")
+        else:
+            print(patient_name," is healthy.")
 
-result1 = covid(patient_name)
-print(result1)
+
+covid(patient_name,body_temp)
 
 
 
